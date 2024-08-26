@@ -1,5 +1,5 @@
 import { Col, Row } from "react-bootstrap";
-import Zoom from 'react-reveal/Zoom';
+
 import "./app.css"
 import item from "./data";
 const Categore=({filterData,allCategore})=>{
@@ -10,7 +10,7 @@ const Categore=({filterData,allCategore})=>{
 
     return(
         <Row className="my-4 " >
-            <Zoom>
+           
             <Col sm="12" className="d-flex justify-content-center">
                 {
                     allCategore.length>1 ?(allCategore.map((item)=>{
@@ -23,7 +23,7 @@ const Categore=({filterData,allCategore})=>{
                 
          
             </Col>
-            </Zoom>
+          
         </Row>
     )
 }

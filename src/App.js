@@ -5,7 +5,7 @@ import Categore from "./componant/Categore.js";
 import Item from "./componant/Item.js";
 import item from "./componant/data.js";
 import { useState } from "react";
-import Fade from 'react-reveal/Fade';
+
 
 function App() {
   let [data,setdata]=useState(item)

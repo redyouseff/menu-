@@ -1,7 +1,7 @@
 import { Card, Col, Row } from "react-bootstrap";
-import Zoom from 'react-reveal/Zoom';
+// import Zoom from 'react-reveal/Zoom';
 import "./app.css"
-import item from "./data";
+
 const Item=({data})=>{
   
     return(
@@ -10,7 +10,7 @@ const Item=({data})=>{
             data.length>=1 ?(data.map((item)=>{
                 return(
                     <Col sm="12">
-                       <Zoom >
+                  
                     <Card key={data.id} className="d-flex flex-row my-3 card">
                     <Card.Img className="im" variant="top" src={item.img} />
                     <Card.Body>
@@ -24,7 +24,7 @@ const Item=({data})=>{
                     </Card.Body>
                     
                   </Card>
-                  </Zoom>
+               
                   </Col>
                 )
 
